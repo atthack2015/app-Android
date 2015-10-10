@@ -2,8 +2,8 @@
     <string name="app_name">"Private Chat "</string>
     <string name="title_tab_available">Disponibles</string>
     <string name="title_tab_actives">Activos</string>
-    <string name="out_area">Fuera del Area</string>
-    <string name="message_out_area">Esta fuera de área.\nEn 5 minutos  se destruirá el Chat</string>
+    <string name="out_area">Estas fuera del Area</string>
+    <string name="message_out_area">En 5 minutos  se eliminara el Chat</string>
     <string name="ok">Aceptar</string>
     <string name="cancel">cancel</string>
     <string name="action_shared_info">Compartir Información</string>
