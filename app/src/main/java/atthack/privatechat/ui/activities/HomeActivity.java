@@ -2,11 +2,13 @@ package atthack.privatechat.ui.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 
 import atthack.privatechat.R;
 import atthack.privatechat.ui.adapters.MyFragmentPagerAdapter;
 import atthack.privatechat.ui.commons.BaseActivity;
+import atthack.privatechat.ui.fragments.InvitacionDialogFragment;
 import butterknife.Bind;
 
 public class HomeActivity extends BaseActivity {
@@ -25,6 +27,12 @@ public class HomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setupViewPager();
+        showAlert();
+    }
+    private void showAlert(){
+        FragmentManager fm= getSupportFragmentManager();
+        InvitacionDialogFragment alertDialog= InvitacionDialogFragment.newInstance("title");
+        alertDialog.show(fm,"fragmentdialog_solicitud");
     }
 
 

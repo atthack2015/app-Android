@@ -10,7 +10,6 @@ import java.util.List;
 
 import atthack.privatechat.R;
 import atthack.privatechat.ui.fragments.ActivesFragment;
-import atthack.privatechat.ui.fragments.AvailableFragment;
 import atthack.privatechat.ui.utils.models.ModelPagerFragment;
 
 /**
