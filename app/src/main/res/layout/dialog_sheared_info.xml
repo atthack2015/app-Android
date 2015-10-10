@@ -32,7 +32,7 @@
             android:text="@string/facebook"
             android:textSize="16sp" />
 
-        <Switch
+        <CheckBox
             android:id="@+id/checkBoxFacebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
