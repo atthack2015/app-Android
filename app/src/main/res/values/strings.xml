@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">"Private Chat "</string>
+    <string name="title_tab_available">Disponibles</string>
+    <string name="title_tab_actives">Activos</string>
 </resources>
