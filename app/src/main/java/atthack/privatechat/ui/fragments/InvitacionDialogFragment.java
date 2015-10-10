@@ -8,7 +8,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
+import android.view.LayoutInflater;
+import android.view.View;
 
+import atthack.privatechat.R;
 import butterknife.Bind;
 
 /**
@@ -32,9 +35,10 @@ public class InvitacionDialogFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder alertDialog= new AlertDialog.Builder(getActivity());
-        alertDialog.setTitle("Invitacion");
-        alertDialog.setMessage("Aceptar invitacion");
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+        View view = inflater.inflate(R.layout.fragmentdialog_solicitud, null);
+        alertDialog.setView(view);
         alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 
             @Override
@@ -48,10 +52,9 @@ public class InvitacionDialogFragment extends DialogFragment {
 
             }
         });
+
         return alertDialog.create();
-                    }
-
-    public  void showAlertDialog(Context context, String title , String message, Boolean status){
-
     }
+
+
 }

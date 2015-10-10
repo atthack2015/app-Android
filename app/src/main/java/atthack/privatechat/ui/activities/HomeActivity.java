@@ -27,14 +27,8 @@ public class HomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setupViewPager();
-        showAlert();
-    }
-    private void showAlert(){
-        FragmentManager fm= getSupportFragmentManager();
-        InvitacionDialogFragment alertDialog= InvitacionDialogFragment.newInstance("title");
-        alertDialog.show(fm,"fragmentdialog_solicitud");
-    }
 
+    }
 
     @Override
     protected int getLayout() {
