@@ -3,10 +3,14 @@ package atthack.privatechat.ui.activities;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import atthack.privatechat.R;
 import atthack.privatechat.ui.adapters.MyFragmentPagerAdapter;
 import atthack.privatechat.ui.commons.BaseActivity;
+import atthack.privatechat.ui.dialogs.OutAreaDialog;
+import atthack.privatechat.ui.dialogs.SharedInfoDialog;
 import butterknife.Bind;
 
 public class HomeActivity extends BaseActivity {
@@ -30,7 +34,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.home_main;
+        return R.layout.activity_home;
     }
 
     private void setupViewPager() {
@@ -39,4 +43,35 @@ public class HomeActivity extends BaseActivity {
         mViewPager.setAdapter(myFragmentPagerAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.home_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId())
+        {
+            case R.id.action_out_area:
+                showOutAreDialog();
+                break;
+            case R.id.action_share_info:
+                SharedInfoDialog sharedInfoDialog = new SharedInfoDialog();
+                sharedInfoDialog.show(getSupportFragmentManager(), null);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void showOutAreDialog() {
+        OutAreaDialog outAreaDialog = new OutAreaDialog();
+        outAreaDialog.show(getSupportFragmentManager(), null);
+    }
+
+
 }
