@@ -1,7 +1,5 @@
 package atthack.privatechat.io.model;
 
-import android.text.Editable;
-
 import atthack.privatechat.io.utils.ApiConstates;
 
 /**
