@@ -34,7 +34,7 @@
             card_view:cardUseCompatPadding="true">
 
             <EditText
-                android:id="@+id/textViewChat"
+                android:id="@+id/editTextChat"
                 android:layout_width="match_parent"
                 android:background="@color/transparent"
                 android:layout_height="match_parent"

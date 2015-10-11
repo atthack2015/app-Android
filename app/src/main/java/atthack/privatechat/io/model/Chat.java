@@ -1,5 +1,7 @@
 package atthack.privatechat.io.model;
 
+import android.text.Editable;
+
 import atthack.privatechat.io.utils.ApiConstates;
 
 /**
@@ -16,6 +18,8 @@ public class Chat {
         this.chat = chat;
         this.typeChat = typeChat;
     }
+
+
 
     public int getIdImage() {
         return idImage;

@@ -35,7 +35,7 @@ public class ChatRecyclerAdapter extends RecyclerView.Adapter<ChatRecyclerAdapte
     }
 
     public void addChat(Chat chat) {
-        chatList.add(chat);
+        chatList.add(0,chat);
         notifyDataSetChanged();
     }
 
