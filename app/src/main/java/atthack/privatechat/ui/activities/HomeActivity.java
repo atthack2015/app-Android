@@ -2,6 +2,7 @@ package atthack.privatechat.ui.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,8 +10,12 @@ import android.view.MenuItem;
 import atthack.privatechat.R;
 import atthack.privatechat.ui.adapters.MyFragmentPagerAdapter;
 import atthack.privatechat.ui.commons.BaseActivity;
+<<<<<<< HEAD
 import atthack.privatechat.ui.dialogs.OutAreaDialog;
 import atthack.privatechat.ui.dialogs.SharedInfoDialog;
+=======
+import atthack.privatechat.ui.fragments.InvitacionDialogFragment;
+>>>>>>> feautere_uiinvitacion
 import butterknife.Bind;
 
 public class HomeActivity extends BaseActivity {
@@ -29,8 +34,8 @@ public class HomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setupViewPager();
-    }
 
+    }
 
     @Override
     protected int getLayout() {
