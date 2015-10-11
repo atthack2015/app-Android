@@ -39,6 +39,7 @@
         android:padding="8dp">
 
         <EditText
+            android:id="@+id/text_tags"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -65,24 +66,71 @@
             android:textSize="18sp" />
     </android.support.design.widget.TextInputLayout>
 
-    <Switch
-        android:id="@+id/switch_facebook"
+    <LinearLayout
+        android:id="@+id/containerFacebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:checked="false"
-        android:text="Facebook"
-        android:textSize="18sp" />
+        android:background="@drawable/btn_accent_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
 
-    <Switch
-        android:id="@+id/switch_twitter"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_facebook_grey600_36dp" />
+
+        <Switch
+            android:id="@+id/switch_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:text="Facebook"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerTwitter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:checked="false"
-        android:text="Twitter"
-        android:textSize="18sp" />
+        android:background="@drawable/btn_accent_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_twitter_grey600_36dp" />
+
+        <Switch
+            android:id="@+id/switch_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:text="Twitter"
+            android:textSize="18sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

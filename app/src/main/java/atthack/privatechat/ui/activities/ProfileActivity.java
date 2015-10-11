@@ -9,7 +9,7 @@ import atthack.privatechat.ui.commons.BaseActivity;
 /**
  * Created by LEONARDO on 10/10/2015.
  */
-public class ActivityProfile extends AppCompatActivity {
+public class ProfileActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -10,12 +10,11 @@ import android.view.MenuItem;
 import atthack.privatechat.R;
 import atthack.privatechat.ui.adapters.MyFragmentPagerAdapter;
 import atthack.privatechat.ui.commons.BaseActivity;
-<<<<<<< HEAD
+
 import atthack.privatechat.ui.dialogs.OutAreaDialog;
 import atthack.privatechat.ui.dialogs.SharedInfoDialog;
-=======
 import atthack.privatechat.ui.fragments.InvitacionDialogFragment;
->>>>>>> feautere_uiinvitacion
+
 import butterknife.Bind;
 
 public class HomeActivity extends BaseActivity {
